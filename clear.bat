@@ -4,7 +4,7 @@
 
 @for %%i in %DIRS_TO_RD% do @(
 	@if exist %%i (
-	    @attrib -r -s -h %%i
+		@attrib -r -s -h %%i
 		@del /F /Q  %%i\*
 		@echo     Removing: %%i
 		@rmdir /Q /S %%i > nul
