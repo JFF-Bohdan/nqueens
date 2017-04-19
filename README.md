@@ -4,10 +4,7 @@ Calculates count of solutions for N-Queen problem.
 
 ## General information
 
-Main idea of N-Queen problem is to place 
-
-**N-Queen problem** - you need N chess queens on a chess board with dimensions NxN in a way that they do not
-threat each other (according to chess rules). 
+**N-Queen problem** - you need N chess queens on a chess board with dimensions NxN in a way that they do not threat each other (according to chess rules). 
 
 Program can find all possible solutions for N-dimensional board. Also, program able to print available solutions to console or to the file.
 
@@ -22,6 +19,8 @@ Options:
                         Dimensions for chess board
   -p, --printsolutions  Prints solutions
 ```
+
+By default program will calculate solutions count for 8 dimensional board and will not print solutions.
 
 ### Usage
 

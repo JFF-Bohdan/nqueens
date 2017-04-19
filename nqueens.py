@@ -39,7 +39,7 @@ def main():
 
     # parsing command line
     parser = OptionParser()
-    parser.add_option("-d", "--dimensions", type=int, dest="dimensions", default=4, help="Dimensions for chess board")
+    parser.add_option("-d", "--dimensions", type=int, dest="dimensions", default=8, help="Dimensions for chess board")
     parser.add_option("-p", "--printsolutions", action="store_true", dest="print_solutions", default=False, help="Prints solutions")
 
     (cmd_line_options, args) = parser.parse_args()
