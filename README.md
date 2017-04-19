@@ -79,8 +79,7 @@ You will get someting like this
 
 ```
 2017-04-18 20:47:49,566 - DEBUG - solver initialized for chessboard size: 8
-2017-04-18 20:47:49,605 - INFO - solutions search complete, found solutions coun
-t: 92
+2017-04-18 20:47:49,605 - INFO - solutions search complete, found solutions count: 92
 2017-04-18 20:47:49,606 - INFO - total solutions count - 92
 2017-04-18 20:47:49,607 - INFO - done at 0.04s
 ```
