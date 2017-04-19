@@ -1,6 +1,8 @@
 # nqueens.py
 Calculates count of solutions for N-Queen problem.
 
+![Queen](./img/queen-chess-queen.png)
+
 
 ## General information
 
