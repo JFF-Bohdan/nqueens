@@ -2,7 +2,8 @@ import config
 import logging
 import sys
 
-def init_logger(mainLoggerName = __name__):
+
+def init_logger(mainLoggerName=__name__):
     logger = logging.getLogger(mainLoggerName)
 
     # create formatter

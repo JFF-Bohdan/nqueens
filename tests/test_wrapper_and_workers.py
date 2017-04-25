@@ -2,6 +2,7 @@ import unittest
 import logging
 from system.solver_impl import NQueensProblemSolverWrapper
 
+
 class TestSharedFunctions(unittest.TestCase):
     def test_n_queens_solver(self):
 
@@ -11,7 +12,7 @@ class TestSharedFunctions(unittest.TestCase):
         correct_answers_counts = [1, 0, 0, 2, 10, 4, 40, 92, 352, 724]
         sz = len(correct_answers_counts)
         for i in range(sz):
-            wrapper = NQueensProblemSolverWrapper(logger, i+1)
+            wrapper = NQueensProblemSolverWrapper(logger, i + 1)
             ok = wrapper.process()
 
             # checking wrapper response (returns True when at least 1 solution found)
@@ -28,5 +29,6 @@ class TestSharedFunctions(unittest.TestCase):
         with self.assertRaises(ValueError):
             NQueensProblemSolverWrapper(logger, 0)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

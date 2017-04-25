@@ -1,7 +1,3 @@
-import os
-import errno
-from config import APP_ROOT
-
 class LastErrorHolder:
     """
     Support holding of last error

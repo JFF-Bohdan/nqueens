@@ -1,5 +1,6 @@
 from system.shared import LastErrorHolder
 
+
 class NQueensProblemRecursiveSolver(LastErrorHolder):
     """
     N-Queens problem solver. Recursive implementation
@@ -12,7 +13,7 @@ class NQueensProblemRecursiveSolver(LastErrorHolder):
         self.dimensions = dimensions
 
         # initializing empty board
-        self.board = [[0]*self.dimensions for stub in range(self.dimensions)]
+        self.board = [[0] * self.dimensions for stub in range(self.dimensions)]
 
     def __canSet(self, row, col):
         """
@@ -79,14 +80,16 @@ class NQueensProblemRecursiveSolver(LastErrorHolder):
         """
         yield from self.__solve_worker(0)
 
+
 class NQueensProblemSolverWrapper(LastErrorHolder):
     """
-    Wrapper for N-Queens problem solution. Can find all solutions, count total solutions count and execute callback
-    function.
+    Wrapper for N-Queens problem solution. Can find all solutions, count total solutions
+    count and execute callback function.
 
-    Callback function can process solutions. For example: print them to log, print to file or save int database
+    Callback function can process solutions. For example: print them to log, print to
+    file or save int database
     """
-    def __init__(self, logger, dimensions, cls = NQueensProblemRecursiveSolver):
+    def __init__(self, logger, dimensions, cls=NQueensProblemRecursiveSolver):
         """
         Initializer for wrapper
 

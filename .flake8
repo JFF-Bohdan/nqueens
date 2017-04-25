@@ -1,0 +1,10 @@
+[flake8]
+exclude = .git, .idea, doc, img
+max-line-length = 150
+max-complexity = 10
+filename = *.py
+format = default
+inline-quotes = "
+ignore = E221
+
+

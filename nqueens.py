@@ -6,6 +6,7 @@ from system.stopwatch import Stopwatch
 import signal
 from system.solver_impl import NQueensProblemSolverWrapper
 
+
 def signal_handler(signal, frame):
     """
     Handler for Ctrl-C combination. Terminates program execution
@@ -19,6 +20,7 @@ def signal_handler(signal, frame):
     print()
     exit(0)
 
+
 def solution_log_printer(solution, logger):
     """
     Prints solution to log file
@@ -30,9 +32,10 @@ def solution_log_printer(solution, logger):
     sz = len(solution)
     s = []
     for i in range(sz):
-        s.append(" ".join(['Q' if v else '_' for v in solution[i]]))
+        s.append(" ".join(["Q" if v else "_" for v in solution[i]]))
 
     logger.info("solution:\n{}".format("\n".join(s)))
+
 
 def main():
     logger = init_logger()
@@ -67,6 +70,7 @@ def main():
     logger.info("total solutions count - {}".format(solver.total_solutions_count))
     logger.info("done at {}".format(watch))
     return 0
+
 
 if __name__ == "__main__":
     # initializing Ctrl-C handler
